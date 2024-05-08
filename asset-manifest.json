@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/dandd/static/css/main.f855e6bc.css",
-    "main.js": "/dandd/static/js/main.29bdc45f.js",
+    "main.css": "/dandd/static/css/main.7e37a396.css",
+    "main.js": "/dandd/static/js/main.1299c7b6.js",
     "static/js/453.df96bf6b.chunk.js": "/dandd/static/js/453.df96bf6b.chunk.js",
     "static/media/logo.svg": "/dandd/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/dandd/index.html",
-    "main.f855e6bc.css.map": "/dandd/static/css/main.f855e6bc.css.map",
-    "main.29bdc45f.js.map": "/dandd/static/js/main.29bdc45f.js.map",
+    "main.7e37a396.css.map": "/dandd/static/css/main.7e37a396.css.map",
+    "main.1299c7b6.js.map": "/dandd/static/js/main.1299c7b6.js.map",
     "453.df96bf6b.chunk.js.map": "/dandd/static/js/453.df96bf6b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.29bdc45f.js"
+    "static/css/main.7e37a396.css",
+    "static/js/main.1299c7b6.js"
   ]
 }
