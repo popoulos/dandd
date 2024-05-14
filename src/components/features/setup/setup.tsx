@@ -17,9 +17,10 @@ export function Setup({ setup, setSetup }) {
   const [isOpen, setIsOpen] = useState(false);
   const onSubmit = (e) => {
     e.preventDefault();
+    console.log("e.currentTarget", e);
     setSetup({
-      apiKey: e.target.apikey.value,
-      pseudo: e.target.pseudo.value,
+      apiKey: e.currentTarget.elements.namedItem("apiKey").value,
+      pseudo: e.currentTarget.elements.namedItem("pseudo").value,
     });
     setIsOpen(false);
   };
@@ -36,13 +37,16 @@ export function Setup({ setup, setSetup }) {
             <DrawerTitle>Setup</DrawerTitle>
           </DrawerHeader>
           <div className="p-4 space-y-2">
-            <Input type="text" name="apikey" placeholder="API Key" />
-            <Input type="text" name="pseudo" placeholder="Pseudo" />
+            <Input
+              type="text"
+              name="apikey"
+              id="apiKey"
+              placeholder="API Key"
+            />
+            <Input type="text" name="pseudo" id="pseudo" placeholder="Pseudo" />
           </div>
           <DrawerFooter>
-            <Button type="submit" onClick={onSubmit}>
-              Save
-            </Button>
+            <Button type="submit">Save</Button>
             <DrawerClose>
               <Button variant="outline">Cancel</Button>
             </DrawerClose>

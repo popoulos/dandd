@@ -21,7 +21,9 @@ function App() {
       <div className="container">
         <div className="fixed top-0 left-0 right-0 bottom-12 flex justify-center">
           <div className="max-w-[600px] grow px-2 ">
-            <Story setup={setup} userPrompt={userPrompt} />
+            {setup.apiKey && setup.pseudo && (
+              <Story setup={setup} userPrompt={userPrompt} />
+            )}
           </div>
         </div>
         <div className="fixed bottom-0 left-0 right-0 h-12 flex items-center justify-center space-x-2border-t">
